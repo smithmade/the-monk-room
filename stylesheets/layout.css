@@ -1,0 +1,858 @@
+/*
+* The Monk Room, made by SMITH / smithmade.org
+* code by @nvillapiano using Skeleton V1.2
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face
+
+/* #Site Styles
+================================================== */
+
+* {
+	-webkit-transition: width .3s;
+	-moz-transition: width .3s;
+	-o-transition: width .3s;
+	-ms-transition: width .3s;
+	transition: width .3s;
+	-webkit-transition-delay: .1s;
+	-moz-transition-delay: .1s;
+	-o-transition-delay: .1s;
+	-ms-transition-delay: .1s;
+	transition-delay: .1s;
+}
+
+body {
+	background: url(../images/bg.jpg) repeat;
+	border-top: 5px solid #000;
+	color: #000;
+}
+
+.center {
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+.mobile {
+	display: none;
+}
+
+.desktop {
+	display: block;
+}
+
+.container {
+	padding-bottom: 2%;
+}
+
+/* #Page Styles
+================================================== */
+
+.top-arrow {
+	margin-bottom: 5%;
+}
+
+.lunch, .dinner {
+	margin-bottom: 0;
+}
+
+.hours, .twelve-beers, .cheese, .drinks {
+	margin-bottom: 2%;
+}
+
+.logo {
+	width: 80%;
+}
+
+.phone {
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+.email {
+	padding-bottom: 8%;
+}
+
+.email a {
+	color: white;
+	text-decoration: none;
+	font-style: italic;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.email a:hover {
+	border-bottom: 1px solid white;
+}
+
+.social-icons {
+	margin: 15% 0 11% 0;
+}
+
+.address {
+	margin-bottom: 4%;
+	margin-top: 12.1%;
+}
+
+.social-icons a {
+	background-position: 0 0;
+	background-size: 200%;
+	padding: 12.7%;
+	transition: none;
+}
+
+.social-icons a:hover {
+	background-position: 100% 0;
+	transition: none;
+}
+
+.facebook {
+	background: url(../images/facebook.svg) no-repeat;
+}
+
+.twitter {
+	background: url(../images/twitter.svg) no-repeat;
+	margin: 0 10% 0 10%;
+}
+
+.instagram {
+	background: url(../images/instagram.svg) no-repeat;
+}
+
+.hours {
+	margin-top: 5%;
+}
+
+.happy-hour {
+	margin-top: 5.5%;
+}
+
+.happy-hour.mobile {
+	margin-top: auto;
+}
+
+.happy-hour.mobile img {
+	width: 100%;
+}
+
+.lunch {
+	padding-top: 31.7%;
+	background: url(../images/lunch.jpg) no-repeat;
+	background-position: 0 0;
+	background-size: 200%;
+	transition: none;
+}
+
+.lunch:hover {
+	background-position: 100% 0;
+	cursor: pointer;
+	transition: none;
+}
+
+.lunch-hours, .drinks-hours {
+	text-align: center;
+	background: #ece8d9;
+	margin-top: 0.8em;
+}
+
+.breakfast {
+	padding-top: 31.7%;
+	background: url(../images/breakfast.jpg) no-repeat;
+	background-position: 0 0;
+	background-size: 200%;
+	transition: none;
+}
+
+.breakfast:hover {
+	background-position: 100% 0;
+	cursor: pointer;
+	transition: none;
+}
+
+.breakfast.mobile {
+	background: none;
+	padding-top: 0;
+}
+
+.breakfast-menu-mobile .menu-info {
+	background: #d84132;
+}
+
+.breakfast-menu-mobile .menu-item {
+	padding-top: 1rem;
+	clear: both;
+}
+
+.breakfast-menu-mobile .lunch-hours {
+	padding-bottom: 1rem;
+}
+
+.breakfast-hours, .drinks-hours {
+	text-align: center;
+	background: #d4c29d;
+}
+
+
+.cream-bg {
+	background: #d4c29d;
+}
+
+.cream-bg, .cream-bg > * {
+	background: #d4c29d;
+}
+
+.title {
+	text-align: left;
+	color: #000;
+	font-size: 15px;
+	line-height: 1.15em;
+	margin-bottom: .2em;
+    font-family: 'TradeGothic';
+    text-transform: uppercase;
+}
+
+.description {
+	text-align: left;
+	color: #000;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+.description {
+  	font-family: 'Archer Medium';
+  	font-style:   italic;
+  	font-weight:  400;
+}
+
+strong {
+	text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.6);
+	color: #000
+}
+
+
+.heading.empty-bottom-border {
+	font-size: 0px;
+	line-height: 0;
+}
+
+.menu-item {
+	padding: 0 10% 0 10%;
+}
+
+.lunch-hours img:first-of-type {
+	width: 100%;
+	margin-bottom: -1%;
+}
+
+.drinks-hours img:first-of-type {
+	width: auto;
+	margin-bottom: -0.2%;
+	padding-bottom: 3%;
+}
+
+
+.menu-info {
+	border-bottom: 2px solid;
+	padding-top: 0.7rem;
+	padding-bottom: 0.6rem;
+	background: #cec0a1;
+}
+
+.days, .hours-of-operation {
+	text-align: center;
+}
+
+.days {
+	font-family: serif;
+	font-weight: 100;
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.hours-of-operation {
+	font-family: sans-serif;
+	font-weight: 800;
+	margin-left: 1rem;
+}
+
+.lunch-hours .four.columns {
+	padding-left: 4%;
+	width: 200px;
+}
+
+.heading {
+	text-align: left;
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #dd5041;
+	border-bottom: 2px dotted #7c2826;
+	padding-bottom: 0.2em;
+    font-family: 'TradeGothic';
+}
+
+.center {
+	text-align: center;
+}
+
+.lunch.mobile {
+	padding-top: 0;
+	background: none;
+}
+
+.dinner {
+	padding-top: 31.7%;
+	background: url(../images/food.jpg) no-repeat;
+	background-position: 0 0;
+	background-size: 200%;
+	transition: none;
+}
+
+.dinner:hover {
+	background-position: 100% 0;
+	cursor: pointer;
+	transition: none;
+}
+
+.dinner.mobile {
+	padding-top: 0;
+	background: none;
+}
+
+.drinks {
+	padding-top: 31.7%;
+	background: url(../images/drinks.jpg) no-repeat;
+	background-position: 0 0;
+	background-size: 200%;
+	transition: none;
+}
+
+.drinks:hover {
+	background-position: 100% 0;
+	cursor: pointer;
+	transition: none;
+}
+
+.drinks.mobile {
+	padding-top: 0;
+	background: none;
+}
+
+.focaccina-copy {
+	text-align: left;
+	font-style: italic;
+	font-size: 1.1rem;
+	line-height: 1.2rem;
+}
+
+.lunch-hours.breakfast-hours .heading.center {
+	visibility: hidden;
+	margin-bottom: -1rem;
+}
+
+.container .column, .container .columns .lunch-menu, .lunch-menu-mobile, .container .columns .breakfast-menu, .breakfast-menu-mobile, .container .column, .container .columns .dinner-menu, .dinner-menu-mobile, .container .columns .drinks-menu, .drinks-menu-mobile {
+	display: none;
+	position: relative;
+	top: -0.1rem;
+}
+
+.seven.columns.specials {
+	margin-left: 2.5%;
+	margin-right: 0;
+	margin-top: 2%;
+}
+
+.clear-left {
+	clear: left;
+}
+
+.pasta-mod {
+	width: 428px !important;
+	margin-left: 1.75rem !important;
+}
+
+.eight.columns.alpha.omega.barista-mod, .eight.columns.alpha.omega.focaccina {
+	width: 428px;
+	padding-left: 1.65rem;
+	float: right;
+	padding-right: 1.1rem;
+}
+
+.breakfast-menu .barista-mod {
+	margin-top: 2rem;
+}
+
+.halfy {
+	width: 48%;
+	float: left;
+	padding-right: 2%;
+}
+
+.pizza-fritta {
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 1px dashed;
+}
+
+.col-1, .col-2 {
+	display: inline-block;
+}
+
+.lunch-menu, .dinner-menu, .breakfast-menu {
+	padding-bottom: 1rem;
+}
+
+.no-description {
+	margin-bottom: 0.5rem;
+}
+
+.barista-mod div:nth-of-type(2), .barista-mod div:nth-of-type(3) {
+	float: left;
+	width: 40%;
+}
+
+.barista-mod div:nth-of-type(3) {
+	margin-left: 13.3%;
+}
+
+.dotted {
+	border-bottom: 1px dotted;
+	padding-bottom: 1rem;
+}
+
+.thin-column {
+	width: 170px;
+}
+
+.iced {
+	float: left;
+	clear: left;
+	margin-top: 1rem;
+}
+
+.container .four.wine.columns {
+	width: 194px;
+}
+
+.container .four.wine.columns.red-wine {
+	margin-left: 4%;
+	margin-top: -5em;
+}
+
+.container .four.wine.columns.white-wine {
+	margin-top: -5em;
+}
+
+.container .four.wine.columns.sparkling {
+	margin-left: 4%;
+}
+
+.bottle {
+	color: #dd5041;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	font-family: 'TradeGothic';
+	font-size: 19px;
+}
+
+.drinks-menu .title.no-description {
+	line-height: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+.drinks-mod .title.no-description {
+	line-height: 1.1rem;
+	margin-bottom: 0;
+}
+
+.eight.columns.alpha.omega.drinks-mod div:nth-of-type(2), .eight.columns.alpha.omega.drinks-mod div:nth-of-type(3) {
+	float: left;
+	width: 40%;
+}
+
+.eight.columns.alpha.omega.drinks-mod div:nth-of-type(3) {
+	margin-left: 12.5%;
+}
+
+.eight.columns.alpha.omega.drinks-mod {
+	padding-left: 1.75rem;
+	width: 408px;
+}
+
+.four.columns.alpha.omega.beer {
+	width: 194px;
+	margin-left: 2.35rem;
+}
+
+.heading.center.wine {
+	padding-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.heading.rose {
+	margin-top: 1.5rem;
+}
+
+.drinks-menu {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.drinks-menu-mobile {
+	padding: 1.5rem;
+	padding-top: 0;
+}
+
+.drinks {
+	margin-bottom: 0;
+}
+
+
+.wine em, .no-description em {
+	font-family: 'Archer Medium';
+	font-style: italic;
+	font-weight: 400;
+	text-transform: lowercase;
+}
+
+.coin img {
+	width: 57%;
+	margin-top: 51%;
+	/*reshuffling*/
+	width: 60%;
+	margin-top: 44.5%;
+}
+
+.twelve-beers {
+	width: 100%;
+	margin-top: 4%;
+}
+
+.cheese {
+	margin-top: 7%;
+	/*reshuffling*/
+	max-width: 74.7%;
+}
+
+.five.columns.alpha.omega {
+	text-align: center;
+}
+
+.coffee {
+	margin-top: 2%;
+	margin-bottom: 4.1%;
+	width: 78%;
+	margin-left: auto;
+	margin-right: auto;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+	filter: alpha(opacity=85);
+	opacity: 0.85;
+}
+
+.pasta-spacing {
+	margin-top: 0.6em;
+}
+
+.pizza-spacing {
+	margin-top: -8.1em;
+}
+
+.clam-space {
+	margin-top: 0.3rem;
+	display: inline-block;
+}
+
+.barista-spacing {
+	margin-top: 2.21rem;
+}
+
+.dessert-spacing {
+	margin-top: 2rem;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Desktops */
+	@media only screen and (min-width: 960px) {
+		.lunch-menu-mobile {
+			display: none;
+		}
+		.dinner-menu-mobile {
+			display: none;
+		}
+
+		.drinks-menu-mobile {
+			display: none;
+		}
+	}
+
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+
+
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		
+		.email a {
+			font-size: 85%;
+		}
+
+		.social-icons {
+			margin: 9% 0 9% 0;
+		}
+
+		.lunch-hours .four.columns {
+			padding-left: 3%;
+			width: 164px;
+		}
+
+		.pasta-mod {
+			width: 333px !important;
+			margin-left: 1.75rem !important;
+		}
+
+		.eight.columns.alpha.omega.barista-mod {
+			width: 340px;
+			padding-left: 1.05rem;
+		}
+
+		.eight.columns.alpha.omega.drinks-mod {
+			width: 326px;
+			padding-left: 1.65rem;
+		}
+
+		.drinks-menu .four.columns.alpha.omega {
+			padding-left: 1%;
+			width: 150px;
+		}
+
+		.drinks-menu .four.wine.columns {
+			padding-left: 1%;
+			width: 150px;
+		}
+
+		.address {
+			margin-top: 14.1%;
+		}
+
+		.barista-spacing {
+			margin-top: 4.33rem;
+		}
+
+		.four.columns.alpha.omega.beer {
+			margin-left: 1.45rem;
+		}
+
+		.container .four.wine.columns.red-wine, .container .four.wine.columns.white-wine {
+			margin-top: -1em;
+		}
+
+		.eight.columns.alpha.omega.drinks-mod div:nth-of-type(3) {
+			margin-left: 14.5%;
+		}
+
+		.container .four.wine.columns.sparkling {
+			margin-left: 2.3%;
+		}
+
+
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.mobile {
+			display: block !important; 
+		}
+
+		.desktop {
+			display: none !important;
+		}
+		/*
+		.logo {
+			width: 60%;
+		}
+		*/
+
+		.top-arrow {
+			width: 60%;
+		}
+
+		.phone img {
+			width: 100%;
+		}
+
+		.specials.mobile {
+			margin: auto;
+			margin-bottom: 4%;
+		}
+
+		.specials.mobile img {
+			width: 100%;
+		}
+
+		.happy-hour {
+			margin-bottom: 4% !important;
+		}
+
+		.address {
+			margin-bottom: 2%;
+			margin-top: 4%;
+		}
+
+		.email {
+			padding-bottom: 4%;
+		}
+
+		.heading.pizza {
+			margin-top: 1rem;
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+
+		.heading {
+			font-size: 24px;
+			text-align: center;
+			margin-top: 1.5rem;
+		}
+
+		.lunch-menu-mobile, .dinner-menu-mobile {
+			padding: 1.5rem;
+			padding-top: 0;
+		}
+
+		.title, .description {
+			width: 85%;
+		}
+
+		.lunch-hours img:first-of-type, .lunch-hours img:first-of-type {
+			width: auto;
+			margin-bottom: auto;
+		}
+
+		.cheese, .coffee, .twelve-beers, .happy-hour {
+			margin-top: 4%;
+			margin-bottom: 4%;
+		} 
+
+		.cheese {
+			margin-bottom: 1%;
+		}
+
+		.halfy {
+			width: 100%;
+			padding-right: 0;
+		}
+
+		.iced {
+			float: none;
+			clear: none;
+			text-align: left;
+		}
+
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		.mobile {
+			display: block !important; 
+		}
+
+		.desktop {
+			display: none !important;
+		}
+
+		.email a {
+			font-size: 180%;
+			transition: all .3s;
+		}
+
+		.coin.mobile {
+			text-align: center;
+		}
+		
+		.coin.mobile img {
+			width: 57%;
+			margin-top: 7%;
+			margin-bottom: 7%;
+		}
+
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.mobile {
+			display: block !important; 
+		}
+
+		.desktop {
+			display: none !important;
+		}
+
+		.email a {
+			font-size: 130%;
+			transition: all .3s;
+		}
+
+		.bottle {
+			text-align: left;
+		}
+
+		.coin.mobile {
+			text-align: center;
+		}
+
+		.coin img {
+			width: 50%;
+			margin-top: 7%;
+			margin-bottom: 7%;
+		}
+
+		.cheese {
+			margin-top: 2%;
+			margin-bottom: 1%;
+		}
+
+	}
+
+
+/* #Font-Face
+================================================== */
+
+@font-face {
+  font-family: 'Archer Medium';
+  src: url('Archer-MediumItalic.eot'); /* IE9 Compat Modes */
+  src: url('Archer-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Archer-MediumItalic.svg#94aa0765f2554c0516671b49ff0b6d10') format('svg'), /* Legacy iOS */
+       url('Archer-MediumItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Archer-MediumItalic.woff') format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+    font-family: 'TradeGothic';
+    src: url('tradegothic.eot');
+    src: url('tradegothic.eot') format('embedded-opentype'),
+         url('tradegothic.woff') format('woff'),
+         url('tradegothic.ttf') format('truetype'),
+         url('tradegothic.svg#TradeGothic') format('svg');
+}
